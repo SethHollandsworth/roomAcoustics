@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Acoustic Room Visualization</title>
+  </head>
+<!--test-->
+  <body>
+    <p style='text-align: center'><strong> made with three.js and jQuery</strong><br/>Written by Seth Hollandsworth, 2017</p>
+    <!-- The content of your webpage goes here. -->
+    
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='../lib/three.js'></script>
+    <script src='../lib/OrbitControls.js'></script>
+    <script src='acousticRoom2.js'></script>
+     
+    Particle Count: <input type='number' name='particle count' value=10 id='partCount'>
+    Room Size: <input type='number' name='room size' value=20 id='size'>
+    Temp in C (0-40): <input type='number' name='temp' value=23 id='temp'>
+    </br>
+    Absorption Coefficient (0-1): <input type='number' name='abs' value=0 id='abs'>
+    <!--Scattering Coefficient (0-1): <input type='number' name='scatter' value=0 id='scatter'>-->
+    </br>
+    Starting X Position: <input type='number' name='xPos' value=10 id='xPos'>
+    Starting Y Position: <input type='number' name='yPos' value=10 id='yPos'>
+    Starting Z Position: <input type='number' name='zPos' value=10 id='zPos'>
+    <input type='submit' value='reset' onclick='main()'>
+    <canvas>
+    
+    </canvas>
+
+
+    <p id='jsOutput'></p>
+    
+  </body>
+  
+  
+</html>
